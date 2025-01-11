@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+body {
+    background-color: #e9e7e7;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+header {
+    background-color: #2e7394;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+td{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+td input{
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+footer {
+    background-color: #2e7394;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 600px) {
+    .wrap{
+        margin: 20px auto;
+    }
+    header{
+        padding: 10px;
+    }
+    td{
+        padding: 10px;
+    }
+    td input{
+        width: 100%;
+    }
+    button{
+        padding: 5px 10px;
+    }
+    footer{
+        padding: 10px;    
+    }
+}
